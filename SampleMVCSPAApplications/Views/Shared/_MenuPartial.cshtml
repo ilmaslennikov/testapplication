@@ -1,0 +1,30 @@
+﻿@using DomainModel
+@model MenuItem[]
+
+@helper DisplayLink(IEnumerable<MenuItem> links)
+{
+    foreach (var link in links)
+    {
+        if (link.Items != null && link.Items.Count > 0)
+        {
+            <li class="dropdown">
+                @Html.ActionLink(link.LinkText, link.ActionName, link.ControllerName, new { @class = "dropdown-toggle", data_target = "#", data_toggle = "dropdown" })
+                <ul class="dropdown-menu" role="menu">
+                    @DisplayLink(link.Items)
+                </ul>
+            </li>
+        }
+        else
+        {
+            <li>
+                @Html.ActionLink(link.LinkText, link.ActionName, link.ControllerName)
+            </li>
+        }
+
+    }
+}
+<ul class="nav navbar-nav navbar-right">
+    @DisplayLink(Model)
+</ul>
+
+

@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+@model DomainModel.Beacon
+<form class="form-horizontal" ng-submit="Save($event)" name="editForm">
+    <fieldset>
+        <div class="row">
+            <div class="col-lg-3">
+                @Html.LabelFor(m => m.HexId)
+            </div>
+            <div class="col-lg-4">
+                @Html.EditorFor(m => m.HexId)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                @Html.LabelFor(m => m.Manufacturer)
+            </div>
+            <div class="col-lg-4">
+                @Html.EditorFor(m => m.Manufacturer)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                @Html.LabelFor(m => m.Model)
+            </div>
+            <div class="col-lg-4">
+                @Html.EditorFor(m => m.Model)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                @Html.LabelFor(m => m.Serial)
+            </div>
+            <div class="col-lg-4">
+                @Html.EditorFor(m => m.Serial)
+            </div>
+        </div>
+        <div class="form-group col-lg-12">
+            <button type="submit" class="btn btn-primary">{{ActionName}}</button>
+        </div>
+    </fieldset>
+</form>

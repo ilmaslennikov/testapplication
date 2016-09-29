@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "АСУ РАДИОМАЯК";
+}
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-heading">
+                <h2>Обработка сообщений</h2>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Cистема обеспечивает прием сообщений о событиях, отображение происшествия на карте, регистрацию всей информации о
+                    событии
+                </p>
+                <p>@Html.ActionLink("Обработка собщений", "Message", "Home", null, new { @class = "btn btn-default" })</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-heading">
+                <h2>Заявки</h2>
+            </div>
+            <div class="panel-body">
+                <p> Система обеспечивает обработку заявок на регистрацию радиомаяков и их ввод в БД.</p>
+                <p>@Html.ActionLink("Заявки", "BeaconList", "Home", null, new { @class = "btn btn-default" })</p>
+            </div>
+        </div>
+    </div>
+</div>
+

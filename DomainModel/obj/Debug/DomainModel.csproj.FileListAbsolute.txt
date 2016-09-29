@@ -1,0 +1,10 @@
+D:\Projects\SampleMVCSPAApplications\DomainModel\bin\Debug\DomainModel.dll
+D:\Projects\SampleMVCSPAApplications\DomainModel\bin\Debug\DomainModel.pdb
+D:\Projects\SampleMVCSPAApplications\DomainModel\obj\Debug\DomainModel.dll
+D:\Projects\SampleMVCSPAApplications\DomainModel\obj\Debug\DomainModel.pdb
+D:\Projects\SampleMVCSPAApplications\DomainModel\bin\Debug\DomainModel.dll.config
+D:\Projects\SampleMVCSPAApplications\DomainModel\bin\Debug\EntityFramework.dll
+D:\Projects\SampleMVCSPAApplications\DomainModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\SampleMVCSPAApplications\DomainModel\bin\Debug\EntityFramework.xml
+D:\Projects\SampleMVCSPAApplications\DomainModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\SampleMVCSPAApplications\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache

@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Обработка сообщений";
+}
+<script src="/Scripts/Components/Message.js"></script>
+<div ng-app="MessageModule" ng-controller="MessageController">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Обработка сообщений от радиомаяков</h3>
+            <p>Для того чтобы увидеть сообщения на карте загрузите файл с сообщениями. Формат файла описан в <a href="#">документации</a></p>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <form class="form-inline">
+            <!-- File Button -->
+            <div class="form-group">
+                <input id="fileUpload" type="file" class="filestyle container-fluid" data-buttontext="Выберите файл..." data-buttonname="btn-primary" data-buttonbefore="true" />
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <button type="button" name="singlebutton" class="btn btn-primary" id="singlebutton" ng-click="UploadFiles()">Загрузить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row" ng-if="messages.length > 0">
+        <h3>Список сообщений</h3>
+        <div class="row panel panel-primary">
+            <div class="panel-heading">Сообщения</div>
+            <table class="table table-striped">
+                <thead>
+                    <tr><th>Номер соообщения</th><th>Описание</th><th></th></tr>
+                </thead>
+                <tbody ng-repeat="message in messages">
+                    <tr ng-if="message.Error == null">
+                        <td>{{message.Event.Number}}</td>
+                        <td>{{message.Event.Description}}</td>
+                        <td><a ng-click="ShowDetails(message)">Отобразить на карте</a></td>
+                    </tr>
+                    <tr id="{{message.Event.Number}}" ng-if="message.Error == null" style="display: none">
+                        <td colspan="4">
+                            <div style="width: 500px; height: 400px;"></div>
+                        </td>
+                    </tr>
+                    <tr ng-if="message.Error != null ">
+                        <td>{{message.Error}}</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr style="display: none">
+                        <td colspan="4">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(":file").filestyle();
+    });
+</script>

@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "BeaconList";
+}
+<script src="~/Scripts/Components/BeaconList.js"></script>
+<div ng-app="BeaconList">
+    <div class="row" ng-controller="AddItemController">
+        <a ng-if="!currentItem.expanded" ng-click="currentItem.expanded = true">Создать заявку</a>
+        <a ng-if="currentItem.expanded" ng-click="currentItem.expanded = false">Свернуть</a>
+        <div class="row clearfix" ng-if="currentItem.expanded">
+            <request-edit></request-edit>
+        </div>
+    </div>
+    <div class="row" ng-controller="BeaconListController" item-list getitems="/Home/GetBeacons">
+        <div class="row panel panel-primary" ng-if="items.length > 0">
+            <div class="panel-heading">Заявки на регистрацию</div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th ng-click="OrderBy('HexId')">
+                            Номер маяка
+                        </th>
+                        <th ng-click="OrderBy('Name')">
+                            Собственник
+                        </th>
+                        <th ng-click="OrderBy('Email')">
+                            Email для связи в случае бедствия
+                        </th>
+                        <th>
+                            Действия
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat-start="currentItem in items">
+                        <td>
+                            {{currentItem.HexId}}
+                        </td>
+                        <td>
+                            {{currentItem.Name}}
+                        </td>
+                        <td>
+                            {{currentItem.Email}}
+                        </td>
+                        <td>
+                            <a ng-if="!currentItem.expanded" ng-click="currentItem.expanded = true">Редактировать</a>
+                            <a ng-if="currentItem.expanded" ng-click="currentItem.expanded = false">Свернуть</a>
+                        </td>
+                    </tr>
+                    <tr ng-if="currentItem.expanded" ng-repeat-end ng-controller="EditItemController" ng-init="init(currentItem)">
+                        <td colspan="4">
+                            <request-edit></request-edit>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pager">
+                <pagination total-items="Filter.TotalItems" ng-model="Filter.CurrentPage" items-per-page="Filter.ItemsPerPage" ng-change="pageChanged()"></pagination>
+            </div>
+        </div>
+    </div>
+</div>
+
+
