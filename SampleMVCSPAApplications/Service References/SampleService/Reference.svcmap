@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7a0ffc27-4afe-45ea-888b-e4d961478a7c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/SelfHostedServiceApplication/SampleService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="08090e82-dff0-453b-a0c6-c98d2c58f994" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SelfHostedServiceApplication/SampleService/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="730ff098-f8db-4aac-a2b0-b18c458f3cc4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SelfHostedServiceApplication/SampleService/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="a1507c51-44fe-4f84-83af-eb4ed4478c97" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SelfHostedServiceApplication/SampleService/?disco" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="9868484c-9b67-4804-ac20-e7235f8f983a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SelfHostedServiceApplication/SampleService/?xsd=xsd1" />
+    <MetadataFile FileName="SampleService.wsdl" MetadataType="Wsdl" ID="01e2b09e-fb5d-4680-9274-52894275ed97" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SelfHostedServiceApplication/SampleService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

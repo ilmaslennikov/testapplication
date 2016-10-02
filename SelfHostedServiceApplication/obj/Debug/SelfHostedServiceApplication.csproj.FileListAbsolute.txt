@@ -1,0 +1,6 @@
+D:\Projects\SampleMVCSPAApplications\SelfHostedServiceApplication\bin\Debug\SelfHostedServiceApplication.exe.config
+D:\Projects\SampleMVCSPAApplications\SelfHostedServiceApplication\bin\Debug\SelfHostedServiceApplication.exe
+D:\Projects\SampleMVCSPAApplications\SelfHostedServiceApplication\bin\Debug\SelfHostedServiceApplication.pdb
+D:\Projects\SampleMVCSPAApplications\SelfHostedServiceApplication\obj\Debug\SelfHostedServiceApplication.csprojResolveAssemblyReference.cache
+D:\Projects\SampleMVCSPAApplications\SelfHostedServiceApplication\obj\Debug\SelfHostedServiceApplication.exe
+D:\Projects\SampleMVCSPAApplications\SelfHostedServiceApplication\obj\Debug\SelfHostedServiceApplication.pdb

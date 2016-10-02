@@ -19,7 +19,7 @@ D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\bin\Debug\Microsoft.P
 D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
 D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\obj\Debug\MVCAplicationServices.csprojResolveAssemblyReference.cache
-D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\obj\Debug\MVCAplicationServices.dll
-D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\obj\Debug\MVCAplicationServices.pdb
 D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\obj\Debug\MVCAplicationServices.Properties.Resources.resources
 D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\obj\Debug\MVCAplicationServices.csproj.GenerateResource.Cache
+D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\obj\Debug\MVCAplicationServices.dll
+D:\Projects\SampleMVCSPAApplications\MVCAplicationServices\obj\Debug\MVCAplicationServices.pdb
